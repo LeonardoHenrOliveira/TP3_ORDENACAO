@@ -14,10 +14,10 @@ Trocha InicializaRocha(Trocha *rocha, int identificador, float peso, float latit
 void classifica_categoria(L_entrada* lista_e,Trocha* rocha_m,int j) {
     if (j==1) { 
         
-        if (strcmp(lista_e->item_e[0].nome, "Ferrolita") == 0) {
+        if (strcmp(lista_e->item_e[0].nome, "Ferrolita")== 0 ) {
             strcpy(rocha_m->categoria, "Ferrom");
         }
-        else if (strcmp(lista_e->item_e[0].nome, "Solarium") == 0) {
+        else if (!strcmp(lista_e->item_e[0].nome, "Solarium")== 0) {
             strcpy(rocha_m->categoria, "Solaris");
         }  
         else {
@@ -61,7 +61,7 @@ void setidentificador(Trocha *rocha, int identificador){
 }
 
 void setpeso(Trocha *rocha, float peso){
-    rocha->peso=peso;
+    rocha->peso = peso;
 }
 void setlatitude(Trocha *rocha, float latitude){
     rocha->latitude = latitude;

@@ -1,5 +1,3 @@
-#ifndef ROCHA_H
-#define ROCHA_H
 #include <stdio.h>
 #include "L_entradas.h"
 
@@ -30,5 +28,3 @@ float getpeso(Trocha* rocha);
 char* getcategoria(Trocha* rocha);
 float getlatitude(Trocha* rocha);
 float getlongitude(Trocha* rocha);
-
-#endif
