@@ -30,7 +30,7 @@ void classifica_categoria(L_entrada* lista_e,Trocha* rocha_m,int j) {
         else if ((strcmp(lista_e->item_e[0].nome, "Aquavitae") == 0 && strcmp(lista_e->item_e[1].nome, "Ferrolita") == 0) ||(strcmp(lista_e->item_e[1].nome, "Aquavitae") == 0 && strcmp(lista_e->item_e[0].nome, "Ferrolita") == 0)) {
             strcpy(rocha_m->categoria, "Aquaferro");
         }
-        else if ((strcmp(lista_e->item_e[0].nome, "Ferrolita") == 0 && strcmp(lista_e->item_e[1].nome, "Solarium") == 0) || (strcmp(lista_e->item_e[1].nome, "Ferrolita") == 0 && strcmp(lista_e->item_e[0].nome, "Solarium") == 0)) {
+        else if ((strcmp(lista_e->item_e[0].nome, "Terranita") == 0 && strcmp(lista_e->item_e[1].nome, "Solarium") == 0) || (strcmp(lista_e->item_e[1].nome, "Terranita") == 0 && strcmp(lista_e->item_e[0].nome, "Solarium") == 0)) {
             strcpy(rocha_m->categoria, "Terrasol");
         }
         else if ((strcmp(lista_e->item_e[0].nome, "Calaris") == 0 && strcmp(lista_e->item_e[1].nome, "Terranita") == 0) || (strcmp(lista_e->item_e[1].nome, "Calaris") == 0 && strcmp(lista_e->item_e[0].nome, "Terranita") == 0)) {

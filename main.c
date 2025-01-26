@@ -9,7 +9,7 @@ int main(){
     int comparacoes = 0;
     int movimentacao = 0;
 
-    FILE *arquivo = fopen("entrada_250_rochas.txt", "r");
+    FILE *arquivo = fopen("arquivo.txt", "r");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo.\n");
         return 1; 
