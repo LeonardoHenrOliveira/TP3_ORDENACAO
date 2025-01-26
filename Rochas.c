@@ -17,7 +17,7 @@ void classifica_categoria(L_entrada* lista_e,Trocha* rocha_m,int j) {
         if (strcmp(lista_e->item_e[0].nome, "Ferrolita")== 0 ) {
             strcpy(rocha_m->categoria, "Ferrom");
         }
-        else if (!strcmp(lista_e->item_e[0].nome, "Solarium")== 0) {
+        else if (strcmp(lista_e->item_e[0].nome, "Solarium")== 0) {
             strcpy(rocha_m->categoria, "Solaris");
         }  
         else {
